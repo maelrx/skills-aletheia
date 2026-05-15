@@ -1,4 +1,4 @@
-# Universal Agent Skills Pack
+# Skills Aletheia
 
 Um pacote portátil de skills para Claude Code, Codex e outros agentes de código. Ele converte os documentos SSOT de segurança e operações fornecidos em skills operacionais reutilizáveis em inglês para auditar, fortalecer e entregar aplicações web construídas com IA.
 
@@ -31,7 +31,7 @@ O pacote é intencionalmente agnóstico em relação a ferramentas:
 ## Instalação no Claude Code
 
 ```bash
-cd universal-agent-skills-pack
+cd skills-aletheia
 bash scripts/install-claude-skills.sh
 ```
 
@@ -43,10 +43,10 @@ Copie `AGENTS.md` para a raiz do repositório alvo, ou mescle seu conteúdo no `
 
 ```bash
 cd target-repo
-cp /path/to/universal-agent-skills-pack/AGENTS.md ./AGENTS.md
+cp /path/to/skills-aletheia/AGENTS.md ./AGENTS.md
 mkdir -p .agent-skills
-cp -R /path/to/universal-agent-skills-pack/skills .agent-skills/
-cp -R /path/to/universal-agent-skills-pack/references .agent-skills/
+cp -R /path/to/skills-aletheia/skills .agent-skills/
+cp -R /path/to/skills-aletheia/references .agent-skills/
 ```
 
 Depois, peça ao Codex para executar a skill relevante pelo nome, por exemplo:
